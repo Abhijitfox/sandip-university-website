@@ -44,12 +44,12 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full py-16 px-6 md:px-12 lg:px-24 bg-white">
+    <section className="w-full py-10 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
         
-        <h2 className="text-4xl font-bold text-left text-[#0d253f] mb-12">
+      <h4 className="text-3xl md:text-4xl font-extrabold text-slate-700 mb-10">
           FAQ's
-        </h2>
+        </h4>
 
         <div className="space-y-4">
           {faqs.map((item, index) => (
@@ -57,7 +57,7 @@ export default function FAQSection() {
               
               {/* FAQ HEADER */}
               <button
-                className="w-full bg-[#f5f7fa] px-6 py-2 rounded-md flex justify-between items-center"
+                className="w-full bg-[#f5f7fa] px-5 py-2 rounded-md flex justify-between items-center"
                 onClick={() => toggle(index)}
               >
                 <span className="text-lg font-medium text-[#1f2c40]">

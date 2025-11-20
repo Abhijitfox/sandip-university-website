@@ -7,3 +7,34 @@
     @apply font-inter;
   }
 }
+
+@keyframes slideNext {
+  0% {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slidePrev {
+  0% {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.animate-slideNext {
+  animation: slideNext 0.9s ease-out;
+}
+
+.animate-slidePrev {
+  animation: slidePrev 0.9s ease-out;
+}
+

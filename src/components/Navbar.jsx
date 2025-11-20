@@ -10,12 +10,12 @@ export default function Navbar() {
 
   const navLinks = [
     "Home",
-    "Key Highlights",
     "About Us",
+    "Our Journey",
     "Course",
     "Campus Life",
-    "FAQ's",
-    "Contact Us",
+    "WhyUs",
+    // "Contact Us",
   ];
 
   return (

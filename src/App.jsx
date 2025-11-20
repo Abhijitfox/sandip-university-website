@@ -6,9 +6,15 @@ import AboutSection from './components/AboutSection'
 import StatsSection from './components/StatsSection'
 import HowToApplySection from './components/HowToApplySection'
 import StatsCountSection from './components/StatsCountSection'
-import BdesSection from './components/BdesSection'
-import BdesSection2 from './components/BdesSection2'
+import Cource1 from './components/Cource1'
+import Cource2 from './components/Cource2'
 import FAQSection from './components/FAQSection'
+import Carousel from './components/Carousel'
+import Footer from './components/Footer'
+import RecruiterSlider from './components/RecruiterSlider'
+import Cource3 from './components/Cource3'
+import Awards from './components/Awards'
+import WhyUs from './components/WhyUs'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,12 +24,20 @@ function App() {
       <Navbar/>
       <Herosection/>
       <AboutSection/>
+      <Cource1/>
+      <Cource2/>
+      <Cource3/>
+
+
       {/* <StatsSection/> */}
-      <HowToApplySection/>
+      {/* <HowToApplySection/> */}
+      {/* <Awards/> */}
       <StatsCountSection/>
-      <BdesSection/>
-            <BdesSection2/>
-                        <FAQSection/>
+      <RecruiterSlider/>
+      <Carousel/>
+      <WhyUs/>
+      <FAQSection/>
+      <Footer/>
 
             
 

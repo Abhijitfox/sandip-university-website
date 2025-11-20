@@ -7,22 +7,33 @@ export default function Herosection() {
   return (
     <div className="min-h-screen w-full relative overflow-hidden font-sans">
 
-      {/* 🔵 Background Image with Smooth Zoom */}
-      <motion.div
-        initial={{ scale: 1 }}
-        animate={{ scale: 1.08 }}
-        transition={{
-          duration: 13,
-          repeat: Infinity,
-          repeatType: "reverse",
-          ease: "easeInOut",
-        }}
-        className="absolute inset-0 w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: "url('herosection/bghero.jpg')" }}
-      />
+{/* 🔵 PERFECT FULL-SCREEN BACKGROUND IMAGE */}
+<motion.div
+  initial={{ scale: 1 }}
+  animate={{ scale: 1.06 }}
+  transition={{
+    duration: 12,
+    repeat: Infinity,
+    repeatType: "reverse",
+    ease: "easeInOut",
+  }}
+  className="
+    absolute inset-0 
+    w-full h-full 
+    bg-cover bg-center bg-no-repeat
+  "
+  style={{
+    backgroundImage: "url('/herosection/bghero.png')",
+    backgroundSize: "cover",       // Ensures full-screen coverage
+    backgroundPosition: "center",  // Keeps subject centered
+    backgroundRepeat: "no-repeat", // Prevents tiling
+  }}
+/>
+
+
 
       {/* DARK GRADIENT OVERLAY FOR TEXT VISIBILITY */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/40" />
+      <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/30" />
 
       {/* MAIN CONTENT */}
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 
@@ -35,7 +46,6 @@ export default function Herosection() {
   transition={{ duration: 0.7 }}
   className="lg:col-span-7 col-span-12"
 >
-  {/* Curved Glass Card Wrapper */}
   <div className="
   max-w-xl
   ">
@@ -45,48 +55,66 @@ export default function Herosection() {
 
     {/* Content */}
     <div className="relative z-10 text-white">
-      
-      {/* Heading */}
-      <h1 className="text-4xl md:text-5xl font-extrabold leading-snug drop-shadow-xl">
-        Start Your Creative Journey at
-        <span className="block mt-2 text-5xl md:text-6xl 
-        bg-gradient-to-r 
-                        from-blue-600 to-blue-100 
-                        bg-clip-text text-transparent drop-shadow-[0_4px_20px_rgba(0,0,0,0.4)]">
-          Sandip University
-        </span>
-      </h1>
 
-      {/* Description */}
-      <p className="text-sm md:text-lg text-gray-200 mt-4 leading-relaxed drop-shadow-lg">
-        Apply for the B.Design Programme focused on creativity, innovation &
-        hands-on practical training to shape your future in design excellence.
-      </p>
+  {/* Heading */}
+  <h1 className="text-4xl md:text-5xl font-extrabold leading-snug drop-shadow-xl">
+    Start Your Creative Journey at
 
-      {/* Info Bar */}
-      <div className="
-        mt-6 flex items-center gap-5
-        bg-black/30 backdrop-blur-xl 
-        border border-white/10
-        px-6 py-3 rounded-2xl shadow-lg
-      ">
-        
-        <div className="flex items-center gap-2">
-          <FontAwesomeIcon icon={faBookOpen} className="text-blue-300 text-lg" />
-          <span className="text-white font-medium">4-Year Programme</span>
-        </div>
+    <span
+      className="block mt-2 text-5xl md:text-6xl 
+      bg-gradient-to-r from-blue-600 to-blue-100 
+      bg-clip-text text-transparent 
+      drop-shadow-[0_4px_20px_rgba(0,0,0,0.4)]"
+    >
+      Sandip University
+    </span>
 
-        <span className="text-gray-100">|</span>
+    {/* NEW: Design School Line */}
+    <motion.span
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="block text-2xl md:text-3xl 
+      font-light tracking-wide 
+       drop-shadow-2xl mt-1"
+    >
+      School of Design
+    </motion.span>
+  </h1>
 
-        <div className="flex items-center gap-2">
-          <FontAwesomeIcon icon={faClock} className="text-blue-300 text-lg" />
-          <span className="text-white">
-            Deadline: <span className="text-blue-100 font-semibold">28 Feb 2026</span>
-          </span>
-        </div>
+  {/* Description */}
+  <p className="text-sm md:text-lg text-gray-200 mt-4 leading-relaxed drop-shadow-lg">
+    Apply for the B.Design Programme focused on creativity, innovation &
+    hands-on practical training to shape your future in design excellence.
+  </p>
 
-      </div>
+  {/* Info Bar */}
+  <div
+    className="
+      mt-6 flex items-center gap-5
+      bg-black/30 backdrop-blur-xl 
+      border border-white/10
+      px-6 py-3 rounded-2xl shadow-lg
+    "
+  >
+    <div className="flex items-center gap-2">
+      <FontAwesomeIcon icon={faBookOpen} className="text-blue-300 text-lg" />
+      <span className="text-white font-medium">4-Year Programme</span>
     </div>
+
+    <span className="text-gray-100">|</span>
+
+    <div className="flex items-center gap-2">
+      <FontAwesomeIcon icon={faClock} className="text-blue-300 text-lg" />
+      <span className="text-white">
+        SUDAT-Date:{" "}
+        <span className="text-blue-100 font-semibold">31 Jan 2026</span>
+      </span>
+    </div>
+  </div>
+
+</div>
+
   </div>
 </motion.div>
 
@@ -99,10 +127,14 @@ export default function Herosection() {
         >
           <div className="bg-white/20 backdrop-blur-xl borde
                           shadow-2xl rounded-2xl p-6 w-full max-w-md">
-
-            <h2 className="text-lg font-semibold text-white text-center mb-4">
-              Apply Now
-            </h2>
+   <h2
+      className="
+        text-xl font-semibold text-white text-center mb-4
+        animate-pulse
+      "
+    >
+      Apply Now
+    </h2>
 
             <form className="grid grid-cols-1 gap-3 text-sm">
               <input className="hero-input" placeholder="Full Name *" />

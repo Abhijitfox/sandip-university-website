@@ -18,21 +18,32 @@ export default function StatsCountSection() {
   return (
     <section
       ref={ref}
-      className="relative py-20 bg-no-repeat bg-cover bg-center"
+      className="
+        relative py-16 
+        bg-no-repeat bg-cover bg-center
+        min-h-[250px] md:min-h-[300px] lg:min-h-[350px]
+        flex justify-evenly items-center
+      "
       style={{
-        backgroundImage: "url('herosection/bghero.jpg')",
+        backgroundImage: "url('herosection/clgview.jpg')",
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60"></div>
+      <div className="absolute inset-0 bg-black/40"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-10 text-center text-white">
-
+        <div
+          className="
+            grid grid-cols-1 
+            sm:grid-cols-2 md:grid-cols-4 
+            gap-12 
+            text-center text-white
+          "
+        >
           {stats.map((item, index) => (
-            <div key={index} className="space-y-2">
-              {/* Count up number */}
-              <h3 className="text-5xl font-extrabold">
+            <div key={index} className="space-y-3">
+              {/* Number */}
+              <h3 className="text-4xl md:text-5xl font-extrabold">
                 {inView ? (
                   <CountUp
                     start={0}
@@ -43,7 +54,7 @@ export default function StatsCountSection() {
                 ) : (
                   "0"
                 )}
-                <span className="text-white">{item.suffix}</span>
+                <span>{item.suffix}</span>
               </h3>
 
               {/* Label */}
@@ -52,7 +63,6 @@ export default function StatsCountSection() {
               </p>
             </div>
           ))}
-
         </div>
       </div>
     </section>

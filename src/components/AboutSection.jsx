@@ -11,7 +11,7 @@ import {
 
 export default function AboutSection() {
   return (
-    <section className="bg-gray-50 text-gray-800 py-20">
+    <section className="bg-gray-50 text-gray-800 py-10">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 
         {/* LEFT CONTENT */}
