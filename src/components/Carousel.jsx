@@ -75,7 +75,7 @@ export default function Carousel() {
 
   return (
     <div className="relative w-full max-w-7xl mx-auto py-10">
-      <h4 className="text-3xl md:text-4xl font-extrabold text-slate-700 mb-4">
+      <h4 className="text-3xl md:text-4xl font-extrabold text-slate-700 mb-10">
         Campus Life
       </h4>
 

@@ -88,7 +88,7 @@ export default function WhyUs() {
         </h4>
 
         {/* Slider */}
-        <div className="mt-20 overflow-hidden relative">
+        <div className="mt-10 overflow-hidden relative">
           <motion.div
             className="flex gap-10"
             animate={{ x: ["0%", "-50%"] }}

@@ -17,9 +17,15 @@ export default function Footer() {
 
           {/* BRAND */}
           <div>
-            <h2 className="text-2xl font-bold text-white tracking-wide">
-              YourBrand
-            </h2>
+            {/* White Card Logo Box */}
+            <div className="bg-white p-4 rounded-xl shadow-md w-[150px]">
+              <img
+                src="/logo/sunlogo.png"
+                alt="Logo"
+                className="w-full object-contain"
+              />
+            </div>
+
             <p className="mt-4 text-gray-400 text-sm leading-relaxed">
               Creating world-class digital experiences with modern design,
               technology, and strategy.
@@ -57,25 +63,29 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* QUICK LINKS */}
+          {/* QUICK LINKS (Navbar Links) */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Quick Links</h3>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li className="hover:text-white transition">Home</li>
-              <li className="hover:text-white transition">About Us</li>
-              <li className="hover:text-white transition">Courses</li>
-              <li className="hover:text-white transition">Contact</li>
+              <li className="hover:text-white transition cursor-pointer">Home</li>
+              <li className="hover:text-white transition cursor-pointer">About Us</li>
+              <li className="hover:text-white transition cursor-pointer">Course</li>
+              <li className="hover:text-white transition cursor-pointer">Recruiters</li>
+              <li className="hover:text-white transition cursor-pointer">Campus Life</li>
+              <li className="hover:text-white transition cursor-pointer">WhyUs</li>
             </ul>
           </div>
 
-          {/* COURSES */}
+          {/* PROGRAMS (From Course section) */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Programs</h3>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li className="hover:text-white transition">Engineering</li>
-              <li className="hover:text-white transition">Management</li>
-              <li className="hover:text-white transition">Arts & Commerce</li>
-              <li className="hover:text-white transition">Science Programs</li>
+              <li className="hover:text-white transition cursor-pointer">B.DES Programs</li>
+              <li className="hover:text-white transition cursor-pointer">MSC Programs</li>
+              <li className="hover:text-white transition cursor-pointer">BSC Programs</li>
+              <li className="hover:text-white transition cursor-pointer">MBA / Management</li>
+              <li className="hover:text-white transition cursor-pointer">Arts & Commerce</li>
+              <li className="hover:text-white transition cursor-pointer">Science Programs</li>
             </ul>
           </div>
 
