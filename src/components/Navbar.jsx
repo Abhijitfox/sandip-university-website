@@ -20,7 +20,7 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR CONTAINER */}
-      <div className="fixed top-0 left-0 w-full z-50 
+      <div className="sticky top-0 left-0 w-full z-50 
                       bg-white backdrop-blur-xl shadow-sm 
                       border-b border-white/20 transition">
 

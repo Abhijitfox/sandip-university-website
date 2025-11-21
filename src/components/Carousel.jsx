@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { motion } from "framer-motion";
 
 const items = [
   {
@@ -74,17 +75,22 @@ export default function Carousel() {
   ];
 
   return (
-    <div className="relative w-full max-w-7xl mx-auto py-10">
-      <h4 className="text-3xl md:text-4xl font-extrabold text-slate-700 mb-10">
-        Campus Life
-      </h4>
+    <div className="relative w-full max-w-7xl mx-auto px-4 pt-2">
 
+  <motion.h2
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-xl md:text-3xl font-semibold tracking-wide text-center text-slate-700 mb-8"
+                >
+        Campus Life
+                </motion.h2>
       <div className="overflow-hidden relative">
 
         {/* Smooth Slide Animation */}
         <div
           className={`
-            grid grid-cols-1 sm:grid-cols-2 gap-6 
+            grid grid-cols-1 sm:grid-cols-2 gap-6 mb-4
             transition-transform duration-500 ease-out
             ${direction === "next" ? "translate-x-0" : "translate-x-0"}
           `}
@@ -106,7 +112,7 @@ export default function Carousel() {
             >
               <img
                 src={item.img}
-                className="h-80 w-full object-cover"
+                className="h-80 w-full object-cover rounded-2xl"
                 alt="slide"
               />
               <div className="p-5">

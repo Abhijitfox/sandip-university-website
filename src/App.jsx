@@ -1,16 +1,14 @@
-import { useState } from 'react'
 import './App.css'
 import Herosection from './components/Herosection'
 import Navbar from './components/Navbar'
 import AboutSection from './components/AboutSection'
-import Cource1 from './components/Cource1'
-import Cource2 from './components/Cource2'
 import FAQSection from './components/FAQSection'
 import Carousel from './components/Carousel'
 import Footer from './components/Footer'
 import RecruiterSlider from './components/RecruiterSlider'
-import Cource3 from './components/Cource3'
 import WhyUs from './components/WhyUs'
+import Achievements from './components/Achievements'
+import CourseTabs from './components/CourseTabs'
 
 function App() {
 
@@ -25,11 +23,10 @@ function App() {
 <div id="About-Us" className="scroll-mt-24">
   <AboutSection />
 </div>
-
+<Achievements/>
 <div id="Course" className="scroll-mt-24">
-  <Cource1 />
-  <Cource2 />
-  <Cource3 />
+  <CourseTabs/>
+
 </div>
 
 <div id="Recruiters" className="scroll-mt-24">
@@ -40,7 +37,7 @@ function App() {
   <Carousel />
 </div>
 
-<div id="WhyUs" className="scroll-mt-24">
+<div id="WhyUs" className="scroll-mt-16">
   <WhyUs />
 </div>
 

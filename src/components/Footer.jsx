@@ -6,6 +6,7 @@ import {
   faTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt, FaMobileAlt } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -66,42 +67,124 @@ export default function Footer() {
           {/* QUICK LINKS (Navbar Links) */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-3 text-gray-400 text-sm">
-              <li className="hover:text-white transition cursor-pointer">Home</li>
-              <li className="hover:text-white transition cursor-pointer">About Us</li>
-              <li className="hover:text-white transition cursor-pointer">Course</li>
-              <li className="hover:text-white transition cursor-pointer">Recruiters</li>
-              <li className="hover:text-white transition cursor-pointer">Campus Life</li>
-              <li className="hover:text-white transition cursor-pointer">WhyUs</li>
-            </ul>
+  <ul className="space-y-3 text-gray-400 text-sm">
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Home">Home</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#About-Us">About Us</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Course">Course</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Recruiters">Recruiters</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Campus-Life">Campus Life</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#WhyUs">WhyUs</a>
+  </li>
+</ul>
+
+
           </div>
 
           {/* PROGRAMS (From Course section) */}
           <div>
             <h3 className="text-white font-semibold text-lg mb-4">Programs</h3>
             <ul className="space-y-3 text-gray-400 text-sm">
-              <li className="hover:text-white transition cursor-pointer">B.DES Programs</li>
-              <li className="hover:text-white transition cursor-pointer">MSC Programs</li>
-              <li className="hover:text-white transition cursor-pointer">BSC Programs</li>
-              <li className="hover:text-white transition cursor-pointer">MBA / Management</li>
-              <li className="hover:text-white transition cursor-pointer">Arts & Commerce</li>
-              <li className="hover:text-white transition cursor-pointer">Science Programs</li>
+             <ul className="space-y-3 text-gray-400 text-sm">
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Course">B.DES Programs</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Course">MSC Programs</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Course">BSC Programs</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Course">MBA / Management</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Course">Arts & Commerce</a>
+  </li>
+  <li className="hover:text-white transition cursor-pointer">
+    <a href="#Course">Science Programs</a>
+  </li>
+</ul>
+
             </ul>
           </div>
 
-          {/* CONTACT */}
-          <div>
-            <h3 className="text-white font-semibold text-lg mb-4">Contact</h3>
-            <ul className="space-y-3 text-gray-400 text-sm">
-              <li>📍 Pune, Maharashtra, India</li>
-              <li>📞 +91 98765 43210</li>
-              <li>✉️ contact@yourbrand.com</li>
-            </ul>
-          </div>
+  {/* CONTACT */}
+<div>
+  <h3 className="text-white font-semibold text-lg mb-4">Contact</h3>
+
+  <ul className="space-y-4 text-gray-300 text-sm">
+
+    {/* Address */}
+    <li className="flex gap-3">
+      <FaMapMarkerAlt className="text-blue-400 text-lg mt-1" />
+      <div className="leading-relaxed">
+        <p className="font-medium text-white">Address:</p>
+        <p className="text-gray-300">
+          Trimbak Road, Nashik, Maharashtra, India
+        </p>
+      </div>
+    </li>
+
+    {/* Email */}
+    <li className="flex gap-3">
+      <FaEnvelope className="text-blue-400 text-lg mt-1" />
+      <div className="leading-relaxed">
+        <p className="font-medium text-white">Email:</p>
+        <a
+          href="mailto:info@sandipuniversity.edu.in"
+          className=" decoration-blue-400"
+        >
+          info@sandipuniversity.edu.in
+        </a>
+      </div>
+    </li>
+
+    {/* Toll-Free Number */}
+    <li className="flex gap-3">
+      <FaPhoneAlt className="text-blue-400 text-lg mt-1" />
+      <div className="leading-relaxed">
+        <p className="font-medium text-white">Toll-Free Number:</p>
+        <a
+          href="tel:18002122714"
+          className=" decoration-blue-400"
+        >
+          1800-212-2714
+        </a>
+      </div>
+    </li>
+
+    {/* Mobile Number */}
+    <li className="flex gap-3">
+      <FaMobileAlt className="text-blue-400 text-lg mt-1" />
+      <div className="leading-relaxed">
+        <p className="font-medium text-white">Mobile Number:</p>
+        <a
+          href="tel:+919545453092"
+          className=" decoration-blue-400"
+        >
+          +91 9545453092
+        </a>
+      </div>
+    </li>
+
+  </ul>
+</div>
+
         </div>
 
         {/* DIVIDER */}
-        <div className="border-t border-gray-700 mt-12 pt-6 text-center">
+        <div className="border-t border-gray-700 mt-4 pt-2 text-center">
           <p className="text-gray-500 text-sm">
             © {new Date().getFullYear()} YourBrand. All rights reserved.
           </p>

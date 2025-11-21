@@ -1,40 +1,42 @@
 import React, { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 const faqs = [
   {
-    q: "What is the eligibility criteria for B.Des admission?",
-    a: "Candidates must have completed 10+2 (any stream) from a recognized board with the required minimum percentage (varies by institute). Some universities may also consider national or university-level entrance exam scores.",
+    q: "What is the eligibility criteria for B.Des. Admission?",
+    a: "Passed (10+2) or equivalent course in any discipline from a recognized Board/Council/University with a minimum of 45% marks for the General (Open) category and 40% marks for the Reserved category.",
   },
   {
     q: "Do I need to appear for any entrance exam or portfolio evaluation?",
-    a: "Some universities require entrance exams like NID, UCEED, NIFT, or their own tests. Portfolio evaluation may also be required.",
+    a: "Sandip University – School of Design conducts its own entrance examination, SU-DAT, for admission to the B.Des. program. We also accept valid scores from NID, UCEED, and NIFT entrance exams.",
   },
   {
-    q: "Is prior drawing or art knowledge compulsory?",
+    q: "Do I need to have prior drawing or art skills to apply?",
     a: "No, it is not compulsory. Creativity and design thinking ability are more important.",
   },
   {
     q: "Are internships included in the curriculum?",
-    a: "Yes, most universities include internships during later semesters.",
+    a: "Yes, the curriculum includes an internship component during the semester.",
   },
   {
-    q: "Can I switch my design specialization after admission?",
-    a: "Some institutes allow switching specialization in the first year depending on seat availability.",
+    q: "Can I switch my specialization after taking admission?",
+    a: "Yes, since the 1st year in Design is a foundation year, students can change their specialization depending on seat availability.",
   },
   {
-    q: "What is the duration and total credits of the B.Des program?",
-    a: "The B.Des program is 4 years (8 semesters) with approximately 160–200 credits.",
+    q: "What is the course duration of the B.Des. program?",
+    a: "The B.Des. (Bachelor of Design) program is a 4-year course.",
   },
   {
     q: "What is the average salary package for design graduates?",
-    a: "Average packages range from ₹4 LPA to ₹12 LPA depending on skills & portfolio.",
+    a: "Industries offer average salary packages ranging from ₹4 LPA to ₹12 LPA, depending on skills and portfolio.",
   },
   {
-    q: "Is hostel accommodation available for design students?",
-    a: "Yes, most institutes provide hostel facilities for male and female students.",
+    q: "Is hostel accommodation available on the university campus?",
+    a: "Yes, Sandip University provides hostel facilities within the campus.",
   },
 ];
+
 
 export default function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -46,11 +48,15 @@ export default function FAQSection() {
   return (
     <section className="w-full py-10 px-6 md:px-12 bg-white">
       <div className="max-w-7xl mx-auto">
-        
-      <h4 className="text-3xl md:text-4xl font-extrabold text-slate-700 mb-10">
-          FAQ's
-        </h4>
 
+  <motion.h2
+                  initial={{ opacity: 0, y: 15 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-xl md:text-3xl font-semibold tracking-wide text-center text-slate-700 mb-8"
+                >
+          FAQ's
+                </motion.h2>
         <div className="space-y-4">
           {faqs.map((item, index) => (
             <div key={index} className="w-full">
