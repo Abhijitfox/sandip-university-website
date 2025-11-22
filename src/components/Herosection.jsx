@@ -31,19 +31,21 @@ export default function Herosection() {
 
       <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/30 to-black/50" />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-3 sm:px-6 md:px-8 grid lg:grid-cols-12 gap-6 sm:gap-10 items-center">
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-3 sm:px-6 md:px-8 grid lg:grid-cols-12 gap-6 sm:gap-10 items-center">
+        
+        {/* LEFT TEXT SECTION */}
         <motion.div
           initial={{ opacity: 0, x: -40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:col-span-7 col-span-12"
+          className="lg:col-span-7 col-span-12 pt-4 2xl:scale-[1.15] 2xl:translate-x-6"
         >
           <div className="max-w-xl text-center lg:text-left mx-auto lg:mx-0 px-1">
             <h1 className="text-lg sm:text-2xl md:text-3xl font-extrabold leading-snug drop-shadow-xl text-white mb-2">
               Start Your Creative Journey at
             </h1>
 
-            <span className="text-2xl sm:text-4xl md:text-4xl font-extrabold bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent tracking-wide drop-shadow-[0_4px_15px_rgba(0,0,0,0.7)] mb-1 block">
+            <span className="text-2xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent tracking-wide drop-shadow-[0_4px_15px_rgba(0,0,0,0.7)] mb-1 block">
               Sandip University
             </span>
 
@@ -53,39 +55,40 @@ export default function Herosection() {
               transition={{ duration: 0.6, delay: 0.25 }}
               className="mt-2 mb-6"
             >
-              <span className="text-2xl sm:text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-white to-white bg-clip-text text-transparent tracking-wide drop-shadow-[0_4px_15px_rgba(0,0,0,0.7)]">
+              <span className="text-2xl sm:text-4xl md:text-6xl font-extrabold bg-gradient-to-r from-white to-white bg-clip-text text-transparent tracking-wide drop-shadow-[0_4px_15px_rgba(0,0,0,0.7)]">
                 School of Design
               </span>
 
-              <div className="h-[2px] sm:h-[4px] w-[10rem] sm:w-[18rem] md:w-[26rem] mt-3 mx-auto lg:mx-0 bg-gradient-to-r from-blue-600 to-red-300 rounded-full shadow-lg" />
+              <div className="h-[2px] sm:h-[4px] w-[10rem] sm:w-[18rem] md:w-[32rem] mt-3 mx-auto lg:mx-0 bg-gradient-to-r from-blue-600 to-red-300 rounded-full shadow-lg" />
             </motion.div>
 
-            <p className="text-[11px] sm:text-sm md:text-lg text-gray-200 mt-4 leading-relaxed drop-shadow-lg">
+            <p className="text-[11px] sm:text-sm md:text-xl text-gray-200 mt-4 leading-relaxed drop-shadow-lg">
               Applications Invited for <span className="font-semibold text-blue-300">SU-DAT 2026</span> <br />
-              <span className="text-xs sm:text-base md:text-lg">Entrance Exam Required for Bachelor of Design (B.Des.) Admissions.</span>
+              <span className="text-xs sm:text-base md:text-2xl">Entrance Exam Required for Bachelor of Design (B.Des.) Admissions.</span>
             </p>
 
             <div className="mt-5 flex items-center justify-center gap-6 sm:gap-10 bg-black/40 backdrop-blur-xl border border-white/10 px-4 sm:px-6 py-3 rounded-2xl shadow-xl text-white w-full max-w-xs sm:max-w-md mx-auto lg:mx-0">
               <div className="text-center">
-                <p className="text-[10px] sm:text-[12px] text-gray-100">Last Date to Apply</p>
+                <p className="text-[10px] sm:text-[15px] text-gray-100">Last Date to Apply</p>
                 <h3 className="text-sm sm:text-base font-bold">29 Jan 2026</h3>
               </div>
 
               <span className="text-gray-400 text-base sm:text-lg font-light">|</span>
 
               <div className="text-center">
-                <p className="text-[10px] sm:text-[12px] text-gray-100">SU-DAT Exam</p>
+                <p className="text-[10px] sm:text-[16px] text-gray-100">SU-DAT Exam</p>
                 <h3 className="text-sm sm:text-base font-bold">31 Jan 2026</h3>
               </div>
             </div>
           </div>
         </motion.div>
 
+        {/* RIGHT FORM SECTION */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.7 }}
-          className="lg:col-span-5 col-span-12 w-full flex justify-center lg:justify-end items-center"
+          className="lg:col-span-5 col-span-12 w-full flex justify-center lg:justify-end items-center 2xl:scale-[1.15] 2xl:translate-x-[-10px]"
         >
           <div className="bg-white/20 backdrop-blur-xl shadow-2xl rounded-2xl p-4 sm:p-6 w-full max-w-xs sm:max-w-md border border-white/10">
             <h2 className="text-base sm:text-xl font-semibold text-white text-center mb-4 animate-pulse">Apply Now</h2>
