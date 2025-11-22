@@ -9,6 +9,7 @@ import RecruiterSlider from './components/RecruiterSlider'
 import WhyUs from './components/WhyUs'
 import Achievements from './components/Achievements'
 import CourseTabs from './components/CourseTabs'
+import GetInTouch from './components/GetInTouch'
 
 function App() {
 
@@ -40,7 +41,7 @@ function App() {
 <div id="WhyUs" className="scroll-mt-16">
   <WhyUs />
 </div>
-
+<GetInTouch/>
 <div id="FAQ's" className="scroll-mt-24">
   <FAQSection />
 </div>

@@ -37,7 +37,7 @@ export default function EnquiryModal({ open, onClose }) {
         initial={{ scale: 0.9, opacity: 0, y: 20 }}
         animate={{ scale: 1, opacity: 1, y: 0 }}
         transition={{ duration: 0.25 }}
-        className="w-full max-w-3xl bg-white rounded-2xl shadow-2xl p-8 relative"
+        className="w-full max-w-xl bg-white rounded-2xl shadow-2xl p-8 relative"
       >
         {/* Close Button */}
         <button

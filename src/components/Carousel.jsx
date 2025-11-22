@@ -6,7 +6,7 @@ const items = [
     id: 1,
     img: "herosection/campus-1.jpg",
     title: "Vibrant Campus Atmosphere",
-    desc: "Experience an energetic campus filled with learning, culture, and creativity.",
+    desc: "Experience an energetic campus filled with learning, culture",
   },
   {
     id: 2,
